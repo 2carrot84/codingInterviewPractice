@@ -3,13 +3,14 @@ package ch1;
 /**
  * Created by eguns on 2016. 12. 20..
  */
-public class test1 {
+public class Test1 {
     public static void main(String[] args) {
-        isUnique("가나다라12가34");
+        Test1 t = new Test1();
 
+        t.isUniqueString("가나다라12가34");
     }
 
-    public static void isUnique(String str) {
+    public void isUniqueString(String str) {
         boolean flag = true;
 
         for (int i = 0; i < (str.length()-1); i++) {
